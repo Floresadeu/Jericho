@@ -8,22 +8,18 @@ class FavoritesPage extends StatelessWidget {
       backgroundColor: Color(0xFFEBF3EB),
       appBar: AppBar(
         backgroundColor: Color(0xFF299417),
-        leading: GestureDetector(
-          onTap: () {
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.white),
+          onPressed: () {
             Navigator.pop(context);
           },
-          child: Image.asset(
-            'assets/images/fleche_gauche_11.png',
-            width: 33,
-            height: 33,
-          ),
         ),
         title: Text(
           'Favoris',
           style: GoogleFonts.inter(
             fontWeight: FontWeight.w700,
             fontSize: 16,
-            color: Color(0xFF000000),
+            color: Colors.white,
           ),
         ),
       ),

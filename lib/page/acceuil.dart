@@ -1,18 +1,17 @@
-import 'package:flutter/material.dart' show AppBar, AssetImage, BoxDecoration, BoxFit, BuildContext, Color, Container, DecorationImage, EdgeInsets, FontWeight, GestureDetector, Image, MainAxisAlignment, MaterialPageRoute, Navigator, Positioned, Row, Scaffold, SizedBox, Stack, StatelessWidget, Text, Widget;
-// ignore: depend_on_referenced_packages
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:jericho_plays/page/recherche.dart'; 
 import 'package:jericho_plays/page/favoris.dart';
 import 'package:jericho_plays/page/dialogue_taillePolice.dart';
-
 import 'dialogue_voix.dart';
 import 'numero_Page.dart';
 
-
-
-
 class HomePage extends StatelessWidget {
+  final String? paroles;  // Ajout de la variable pour stocker les paroles
+
+  // Ajout d'un constructeur pour accepter les paroles
+  HomePage({this.paroles});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,78 +19,79 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Color(0xFF299417),
         title: Text(
-          'JERICHO PLAY',
+          paroles != null ? 'Paroles du Chant' : 'JERICHO PLAY',
           style: GoogleFonts.inter(
             fontWeight: FontWeight.w700,
             fontSize: 16,
-            color: Color(0xFF000000),
+            color: Colors.white,
           ),
         ),
         actions: [
-          GestureDetector(
-            onTap: () {
+          IconButton(
+            icon: Icon(Icons.search, color: Colors.white),
+            onPressed: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => SearchPage()),
               );
             },
-            child: Container(
-              padding: EdgeInsets.all(8),
-              child: Image.asset(
-                'assets/images/recherche_1.png',
-                width: 33,
-                height: 33,
-              ),
-            ),
           ),
-          GestureDetector(
-            onTap: () {
+          IconButton(
+            icon: Icon(Icons.text_fields, color: Colors.white),
+            onPressed: () {
               showTaillePoliceDialog(context);
             },
-            child: Container(
-              padding: EdgeInsets.all(8),
-              child: Image.asset(
-                'assets/images/police_de_caractere_1.png',
-                width: 33,
-                height: 33,
-              ),
-            ),
           ),
-          Container(
-            padding: EdgeInsets.all(8),
-            child: Image.asset(
-              'assets/images/trois_points_1.png',
-              width: 33,
-              height: 34,
-            ),
+          IconButton(
+            icon: Icon(Icons.more_vert, color: Colors.white),
+            onPressed: () {
+              // Ajoutez l'action que vous souhaitez ici
+            },
           ),
         ],
       ),
       body: Stack(
         children: [
+          if (paroles != null)  // Si les paroles sont présentes, les afficher
+            Center(
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Text(
+                  paroles!,
+                  style: GoogleFonts.inter(
+                    fontWeight: FontWeight.w300,
+                    fontSize: 16,
+                    color: Color(0xFF000000),
+                  ),
+                ),
+              ),
+            )
+          else
+            const Center(
+              
+            ),
           Positioned(
             bottom: 120,
             right: 16,
             child: GestureDetector(
               onTap: () {
-                showVoixDialog(context);  // Affiche la boîte de dialogue `dialogue_voix`
+                showVoixDialog(context);
               },
               child: Container(
                 width: 80,
                 height: 80,
                 decoration: const BoxDecoration(
-                  image: DecorationImage(
-                    fit: BoxFit.cover,
-                    image: AssetImage('assets/images/chanson_1.png'),
-                  ),
+                  color: Color(0xFF299417),
+                  shape: BoxShape.circle,
                 ),
+                child: const Icon(Icons.music_note, size: 30, color: Colors.white),
               ),
             ),
           ),
           Positioned(
-            bottom: 60,
-            left: 8,
-            right: 8,
+            bottom: 30,
+            left: 4,
+            right: 4,
             child: Container(
               decoration: const BoxDecoration(
                 color: Color(0xFFEBF3EB),
@@ -100,40 +100,33 @@ class HomePage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Row(
-                    children: [
-                      Container(
-                        margin: EdgeInsets.only(right: 14),
-                        child: Image.asset(
-                          'assets/images/bouton_jouer_1.png',
-                          width: 33,
-                          height: 33,
-                        ),
-                      ),
-                      SvgPicture.asset(
-                        'assets/vectors/group_8_x2.svg',
-                        width: 148,
-                        height: 19,
-                      ),
-                    ],
+                  IconButton(
+                    icon: Icon(Icons.fast_rewind, color: Colors.black),
+                    onPressed: () {
+                      // Logique pour reculer dans la lecture
+                    },
                   ),
-                  Row(
-                    children: [
-                      Text(
-                        '2:16 sec',
-                        style: GoogleFonts.inter(
-                          fontWeight: FontWeight.w300,
-                          fontSize: 16,
-                          color: Color(0xFF000000),
-                        ),
-                      ),
-                      SizedBox(width: 10),
-                      Container(
-                        color: const Color(0xFF000000),
-                        width: 28,
-                        height: 28,
-                      ),
-                    ],
+                  IconButton(
+                    icon: Icon(Icons.play_arrow, color: Colors.black),
+                    onPressed: () {
+                      // code pour jouer ou mettre en pause
+                    },
+                  ),
+                  Expanded(
+                    child: Slider(
+                      value: 0.3, // Position actuelle de lecture
+                      onChanged: (newValue) {
+                        // code pour mettre à jour la position de lecture
+                      },
+                      activeColor: Colors.black,
+                      inactiveColor: Colors.grey,
+                    ),
+                  ),
+                  IconButton(
+                    icon: Icon(Icons.fast_forward, color: Colors.black),
+                    onPressed: () {
+                      // code pour avancer dans la lecture
+                    },
                   ),
                 ],
               ),
@@ -149,11 +142,7 @@ class HomePage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Image.asset(
-                    'assets/images/recent_1.png',
-                    width: 33,
-                    height: 33,
-                  ),
+                  const Icon(Icons.access_time, color: Colors.white, size: 33),
                   GestureDetector(
                     onTap: () {
                       Navigator.push(
@@ -161,24 +150,16 @@ class HomePage extends StatelessWidget {
                         MaterialPageRoute(builder: (context) => FavoritesPage()),
                       );
                     },
-                    child: Image.asset(
-                      'assets/images/favori_1.png',
-                      width: 33,
-                      height: 33,
-                    ),
+                    child: Icon(Icons.favorite, color: Colors.white, size: 33),
                   ),
                   GestureDetector(
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) =>  NumberSelectionPage()),
+                        MaterialPageRoute(builder: (context) => NumberSelectionPage()),
                       );
                     },
-                    child: Image.asset(
-                      'assets/images/numero_11.png',
-                      width: 33,
-                      height: 33,
-                    ),
+                    child: Icon(Icons.looks_one, color: Colors.white, size: 33),
                   ),
                 ],
               ),

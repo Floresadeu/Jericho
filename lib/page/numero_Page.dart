@@ -1,41 +1,73 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'textePage1.dart'; // Assurez-vous que ce fichier est importé
 
 class NumberSelectionPage extends StatelessWidget {
+  void showTitleDialog(BuildContext context, List<String> titles) {
+     showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        title: Text('Titres de Chants', style: GoogleFonts.inter(color: Colors.black)),
+        content: Container(
+          width: 400, // Largeur fixe de la boîte de dialogue
+          height: 350, // Hauteur fixe de la boîte de dialogue
+          child: ListView.builder(
+            itemCount: titles.length,
+            itemBuilder: (context, index) {
+                return ListTile(
+                  title: Text(titles[index], style: GoogleFonts.inter(color: Colors.black)),
+                  onTap: () {
+                    Navigator.pop(context);
+                    // Logique pour afficher les paroles du chant
+                    // Exemple: Navigator.push(context, MaterialPageRoute(builder: (context) => ChantPage(titre: titles[index])));
+                  },
+                );
+              },
+            ),
+          ),
+          actions: <Widget>[
+            TextButton(
+              child: Text('Fermer', style: GoogleFonts.inter(color: Colors.black)),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    );
+  }
+
   void onNumberTap(BuildContext context, int number) {
-    if (number == 1) {
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => TextePage1()), // Naviguer vers TextePage1
-      );
-    } else {
-      print('Numéro $number cliqué');
-    }
+   //logique pour la récupération des titres de chants en fonction du numéro de page
+    List<String> titles = [];
+    if (number == 1 || number == 3  || number == 4 || number == 5  || number == 6  || number == 7 || number == 8 || number == 9  || number == 10 || number == 11 || number == 12) {
+      titles = ['Chant 1', 'Chant 2', 'Chant 3', 'Chant 4', 'Chant 5',];
+    } else if (number == 2 || number == 13 || number == 14 || number == 14 || number == 16 || number == 17 || number == 18|| number == 19 || number == 20 || number == 21 || number == 22) {
+      titles = ['Chant 1', 'Chant 2', 'Chant 4', 'Chant 4', 'Chant 5',];
+    } // Ajoutez des conditions pour d'autres numéros de page
+
+    showTitleDialog(context, titles); // Affiche la boîte de dialogue avec la liste des titres
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFEBF3EB),
+      backgroundColor: Color(0xFFEBF3EB),
       appBar: AppBar(
         backgroundColor: Color(0xFF299417),
-        leading: GestureDetector(
-          onTap: () {
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.white),
+          onPressed: () {
             Navigator.pop(context);
           },
-          child: Image.asset(
-            'assets/images/fleche_gauche_11.png',
-            width: 33,
-            height: 33,
-          ),
         ),
         title: Text(
           'Sélectionner un numéro de page',
           style: GoogleFonts.inter(
             fontWeight: FontWeight.w700,
             fontSize: 16,
-            color: Color(0xFF000000),
+            color: Colors.white,
           ),
         ),
       ),

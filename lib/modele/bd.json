@@ -1,0 +1,45 @@
+[
+
+{
+    "title": "L'amour a faire les premier part",
+    "page": "1",
+    "parole": "S'aurait-il pardonner tout le mal que j'ai commis,\ns'aurait-il effacer par sa grâce tous mes péchés,\n s'aurait-il oublier tous les mots de ma vie ? \nS'aurait-il emporté auprès de lui ce cœur dégoûtant ?\nRef 1 : je te dis qu'il est le Dieu de la grâce et l'amour\nRef 2 : je te dis qu'il peut porter tous les fardeaux de ta vie\nRef 3 : je te dis que Jésus est venu pour te sauver \n 4 : Je te dis qu'il est déjà près de toi près de ton cœur.    \nSolo : alors, il peut pardonner tout le mal que j'ai commis, il peut effacer par sa grâce tous mes péchés il peut oublier tous les mots de ma vie, il peut emporter près de lui, ce cœur dégoûtant.\nRef : il a pardonné tout le mal que j'ai commis, il a effacé par sa grâce tous mes péchés, il a oublié tous les mots de ma vie. Il a emporté près de lui ce cœur dégoûtant.",
+
+"voices_path": [
+    "assets/Audio/saurais_til_pardonner/SauraisT'ilVoix1.m4a",
+    "assets/Audio/saurais_til_pardonner/SauraisT'ilVoix2.m4a",
+    "assets/Audio/saurais_til_pardonner/SauraisT'ilVoix3.m4a"
+]
+},
+
+{
+    "title": "Lumiere des hommes",
+    "page": "2",
+    "parole": "Ref : Lumière des hommesNous marchons vers toiFils de DieuTu nous sauveràs\nSolo 1 : Ceux qui te cherchentSeigneur,Tu les conduis vers lalumière,Toi la route des égars.\nSolo 2 : Ceux qui te trouventSeigneur,Tu leur promets vie éternelle,Toi la pâque des baptisés.\nSolo 3 : Ceux qui te suiventSeigneur,Tu les nourris de ta parole,Toi le pain de tes invités.",
+
+"voices_path": [
+    "assets/Audio/lumire_des_hommes/lumiere DesHommeVoix1.m4a",
+    "assets/Audio/lumire_des_hommes/lumiere DesHommeVoix2.m4a",
+    "assets/Audio/lumire_des_hommes/lumiere DesHommeVoix3.m4a"
+    
+]
+
+},
+
+{
+   "title": "famfe",
+   "page": "2",
+  "parole": "Refrain : (bis) Fem fe po yoye Yen yanga yen Tchebo si kiek kak tchum yo Gue be wa yiem megié dorior Tem jeune dorior \nSolo : Soprano + Alto  Africa po yoye Si tchomtso moepé Europa a poungPone gante si",
+
+"voices_path": [
+     "assets/Audio/famfeh/femfeVoix1.m4a",
+     "assets/Audio/famfeh/femfeVoix2.m4a",
+     "assets/Audio/famfeh/femfeVoix3.m4a"
+
+
+]
+
+}
+
+
+]

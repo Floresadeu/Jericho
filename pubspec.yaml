@@ -63,28 +63,9 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-    - assets/images/fleche_gauche_11.png
-    - assets/images/favori_1.png
-    - assets/images/numero_11.png
-    - assets/images/fleche_gauche_11.png
-    - assets/images/recent_1.png
-    - assets/images/croix_supprimer_le_signe_1.png
-    - assets/images/croix_supprimer_le_signe_1.png
-    - assets/vectors/container_x2.svg
-    - assets/images/croix_supprimer_le_signe_1.png
-    - assets/images/music_logo_design_1.png
-    - assets/images/favori_1.png
-    - assets/images/recent_1.png
-    - assets/images/recherche_1.png
-    - assets/images/trois_points_1.png
-    - assets/images/bouton_jouer_1.png
-    - assets/images/police_de_caractere_1.png
-    - assets/images/numero_11.png
-    - assets/images/chanson_1.png
-    - assets/vectors/group_8_x2.svg
-    - assets/images/fleche_gauche_11.png
-    - assets/images/numero_1.jpeg
-
+    - assets/Audio
+    - assets/textes
+  
 
   # To add assets to your application, add an assets section, like this:
   # assets:

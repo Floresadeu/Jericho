@@ -1,45 +1,19 @@
 [
-
-{
-    "title": "L'amour a faire les premier part",
-    "page": "1",
-    "parole": "S'aurait-il pardonner tout le mal que j'ai commis,\ns'aurait-il effacer par sa grâce tous mes péchés,\n s'aurait-il oublier tous les mots de ma vie ? \nS'aurait-il emporté auprès de lui ce cœur dégoûtant ?\nRef 1 : je te dis qu'il est le Dieu de la grâce et l'amour\nRef 2 : je te dis qu'il peut porter tous les fardeaux de ta vie\nRef 3 : je te dis que Jésus est venu pour te sauver \n 4 : Je te dis qu'il est déjà près de toi près de ton cœur.    \nSolo : alors, il peut pardonner tout le mal que j'ai commis, il peut effacer par sa grâce tous mes péchés il peut oublier tous les mots de ma vie, il peut emporter près de lui, ce cœur dégoûtant.\nRef : il a pardonné tout le mal que j'ai commis, il a effacé par sa grâce tous mes péchés, il a oublié tous les mots de ma vie. Il a emporté près de lui ce cœur dégoûtant.",
-
-"voices_path": [
-    "assets/Audio/saurais_til_pardonner/SauraisT'ilVoix1.m4a",
-    "assets/Audio/saurais_til_pardonner/SauraisT'ilVoix2.m4a",
-    "assets/Audio/saurais_til_pardonner/SauraisT'ilVoix3.m4a"
-]
-},
-
-{
-    "title": "Lumiere des hommes",
-    "page": "2",
-    "parole": "Ref : Lumière des hommesNous marchons vers toiFils de DieuTu nous sauveràs\nSolo 1 : Ceux qui te cherchentSeigneur,Tu les conduis vers lalumière,Toi la route des égars.\nSolo 2 : Ceux qui te trouventSeigneur,Tu leur promets vie éternelle,Toi la pâque des baptisés.\nSolo 3 : Ceux qui te suiventSeigneur,Tu les nourris de ta parole,Toi le pain de tes invités.",
-
-"voices_path": [
-    "assets/Audio/lumire_des_hommes/lumiere DesHommeVoix1.m4a",
-    "assets/Audio/lumire_des_hommes/lumiere DesHommeVoix2.m4a",
-    "assets/Audio/lumire_des_hommes/lumiere DesHommeVoix3.m4a"
-    
-]
-
-},
-
-{
-   "title": "famfe",
-   "page": "2",
-  "parole": "Refrain : (bis) Fem fe po yoye Yen yanga yen Tchebo si kiek kak tchum yo Gue be wa yiem megié dorior Tem jeune dorior \nSolo : Soprano + Alto  Africa po yoye Si tchomtso moepé Europa a poungPone gante si",
-
-"voices_path": [
-     "assets/Audio/famfeh/femfeVoix1.m4a",
-     "assets/Audio/famfeh/femfeVoix2.m4a",
-     "assets/Audio/famfeh/femfeVoix3.m4a"
-
-
-]
-
-}
-
-
+  {
+    "title": "Simple/Basique",
+    "parole": "Ok, j'vais sortir un nouvel album\nMais, avant, faut qu'on revoit les bases\nJ'vais faire une vidéo simple où j'vais dire des trucs simples\nParce que vous êtes trop cons\nSimple, basique, okay\n\nLes gens les plus intelligents sont pas toujours ceux qui parlent le mieux (simple)\nLes hommes politiques doivent mentir sinon tu voterais pas pour eux (basique)\nSi tu dis souvent qu't'as pas d'problème avec l'alcool, c'est qu't'en as un (simple)\nFaut pas faire un enfant avec les personnes que tu connais pas bien (basique)\nLes mecs du FN ont la même tête que les méchants dans les films (simple)\nEntre avoir des principes et être un sale con, la ligne est très fine (basique)\nHugo Boss habillait les nazis, le style a son importance (simple)\nLes dauphins sont des violeurs, ouais, méfie-toi des apparences (basique)\n\nBasique, simple, simple, basique\nBasique, simple, simple, basique\nVous n'avez pas les bases, vous n'avez pas les bases\nVous n'avez pas les bases, vous n'avez pas les bases\n\nSi c'est marqué sur internet, c'est p't-être faux mais c'est p't-être vrai (simple)\nIlluminatis ou pas, qu'est-ce que ça change ? Tu t'fais baiser (basique)\nÀ l'étranger, t'es un étranger, ça sert à rien d'être raciste (simple)\nLes mecs les plus fous sont souvent les mecs les plus tristes (basique)\nCent personnes possèdent la moitié des richesses du globe (simple)\nTu s'ras toujours à un ou deux numéros d'avoir le quinté dans l'ordre (basique)\nSi t'es souvent seul avec tes problèmes, c'est parce que souvent l'problème c'est toi (simple)\nToutes les générations disent que celle d'après fait n'importe quoi (cliché)\n\nBasique, simple, simple, basique\nBasique, simple, simple, basique\nBasique, simple, simple, basique\nBasique, simple, simple, basique\nVous n'avez pas les bases\nVous n'avez pas les bases\nVous n'avez pas les bases\nVous n'avez pas les bases\nBasique, simple, vous n'avez pas les bases\nBasique, simple, vous n'avez pas les bases\nBasique, simple, vous n'avez pas les bases\nBasique, simple, vous n'avez pas les bases\nBasique, simple, simple, basique\nBasique, simple, simple, basique\nBasique, simple, simple, basique\nBasique, simple, simple, vous n'avez pas les bases",
+    "page": 1,
+    "voices_path": [
+      "assets/audio/1/orelsan/orelsan1.mp3",
+      "assets/audio/1/orelsan/orelsan2.mp3"
+    ]
+  },
+  {
+    "title": "Ils sont cools",
+    "page": 1,
+    "parole": "ils cont cools blblblblblblblbaaaaaaaaaaaaablalbalablabalbalbalablabalbalbalbalbalablabalbalabalbalba",
+    "voices_path": [
+      "assets/audio/2/orelsan3"
+    ]
+  }
 ]

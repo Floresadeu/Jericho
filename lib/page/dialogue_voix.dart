@@ -5,10 +5,10 @@ class VoixDialog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      backgroundColor: Color(0xFFEBF3EB),
+      backgroundColor: const Color(0xFFEBF3EB),
       content: Container(
-        padding: EdgeInsets.all(16),
-        margin: EdgeInsets.all(20), // Réduction de la taille de la boîte
+        padding: const EdgeInsets.all(16),
+        margin: const EdgeInsets.all(20), // Réduction de la taille de la boîte
         child: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -37,7 +37,7 @@ class VoixDialog extends StatelessWidget {
   Widget _buildVoixButton(BuildContext context, String voix) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-        backgroundColor: Color(0xFF299417), // Vert
+        backgroundColor: const Color(0xFF299417), // Vert
       ),
       onPressed: () {
         // Action à effectuer lorsqu'un bouton est cliqué
@@ -48,7 +48,7 @@ class VoixDialog extends StatelessWidget {
         style: GoogleFonts.inter(
           fontWeight: FontWeight.w700,
           fontSize: 16,
-          color: Color(0xFF000000), // Texte en noir
+          color: const Color(0xFF000000), // Texte en noir
         ),
       ),
     );

@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class TaillePoliceDialog extends StatefulWidget {
+  final ValueNotifier<double> fontSizeNotifier;
+
+  TaillePoliceDialog({required this.fontSizeNotifier});
+
   @override
   _TaillePoliceDialogState createState() => _TaillePoliceDialogState();
 }
@@ -10,17 +14,22 @@ class _TaillePoliceDialogState extends State<TaillePoliceDialog> {
   double _fontSize = 16.0; // Taille de police initiale
 
   @override
+  void initState() {
+    super.initState();
+    _fontSize = widget.fontSizeNotifier.value; // Initialiser avec la taille actuelle
+  }
+
+  @override
   Widget build(BuildContext context) {
     return AlertDialog(
       backgroundColor: Color(0xFFEBF3EB),
       content: Container(
-        width: 260, // Réduit la largeur du dialogue
-        height: 260, // Réduit la hauteur du dialogue
+        width: 260,
+        height: 260,
         padding: const EdgeInsets.fromLTRB(0, 21, 14, 19.6),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Texte de titre
             Container(
               margin: EdgeInsets.fromLTRB(17.1, 0, 17.1, 46.4),
               child: Text(
@@ -32,7 +41,6 @@ class _TaillePoliceDialogState extends State<TaillePoliceDialog> {
                 ),
               ),
             ),
-            // Barre de taille
             Container(
               margin: EdgeInsets.fromLTRB(0, 0, 0, 20),
               child: Container(
@@ -43,7 +51,6 @@ class _TaillePoliceDialogState extends State<TaillePoliceDialog> {
                 height: 5.9,
               ),
             ),
-            // Slider pour ajuster la taille de la police
             Slider(
               value: _fontSize,
               min: 10,
@@ -53,10 +60,10 @@ class _TaillePoliceDialogState extends State<TaillePoliceDialog> {
               onChanged: (double value) {
                 setState(() {
                   _fontSize = value;
+                  widget.fontSizeNotifier.value = value; // Mise à jour du ValueNotifier
                 });
               },
             ),
-            // Bouton VALIDER
             Align(
               alignment: Alignment.topRight,
               child: Text(
@@ -76,7 +83,7 @@ class _TaillePoliceDialogState extends State<TaillePoliceDialog> {
           child: const Text(
             'FERMER',
             style: TextStyle(
-              color: Colors.black, // Couleur noire pour le bouton FERMER
+              color: Colors.black,
             ),
           ),
           onPressed: () {
@@ -89,11 +96,11 @@ class _TaillePoliceDialogState extends State<TaillePoliceDialog> {
 }
 
 // Fonction pour afficher le dialogue
-void showTaillePoliceDialog(BuildContext context) {
+void showTaillePoliceDialog(BuildContext context, ValueNotifier<double> fontSizeNotifier) {
   showDialog(
     context: context,
     builder: (BuildContext context) {
-      return TaillePoliceDialog();
+      return TaillePoliceDialog(fontSizeNotifier: fontSizeNotifier);
     },
   );
 }

@@ -1,19 +1,74 @@
 [
+
   {
-    "title": "Simple/Basique",
-    "parole": "Ok\nJ'vais faire une vidéo simple où j'vais dire des trucs simples\nParce que vous êtes trop cons\nSimple, basique, okay\n\nLes gens les plus intelligents sont pas toujours ceux qui parlent le mieux (simple)\nLes hommes politiques doivent mentir sinon tu voterais pas pour eux (basique)\nSi tu dis souvent qu't'as pas d'problème avec l'alcool, c'est qu't'en as un (simple)\nFaut pas faire un enfant avec les personnes que tu connais pas bien (basique)\nLes mecs du FN ont la même tête que les méchants dans les films (simple)\nEntre avoir des principes et être un sale con, la ligne est très fine (basique)\nHugo Boss habillait les nazis, le style a son importance (simple)\nLes dauphins sont des violeurs, ouais, méfie-toi des apparences (basique)\n\nBasique, simple, simple, basique\nBasique, simple, simple, basique\nVous n'avez pas les bases, vousOk, j'vais sortir un nouvel album\nMais, avant, faut qu'on revoit les bases\nJ'vais faire une vidéo simple où j'vais dire des trucs simples\nParce que vous êtes trop cons\nSimple, basique, okay\n\nLes gens les plus intelligents sont pas toujours ceux qui parlent le mieux (simple)\nLes hommes politiques doivent mentir sinon tu voterais pas pour eux (basique)\nSi tu dis souvent qu't'as pas d'problème avec l'alcool, c'est qu't'en as un (simple)\nFaut pas faire un enfant avec les personnes que tu connais pas bien (basique)\nLes mecs du FN ont la même tête que les méchants dans les films (simple)\nEntre avoir des principes et être un sale con, la ligne est très fine (basique)\nHugo Boss habillait les nazis, le style a son importance (simple)\nLes dauphins sont des violeurs, ouais, méfie-toi des apparences (basique)\n\nBasique, simple, simple, basique\nBasique, simple, simple, basique\nVous n'avez pas les bases, vousOk, j'vais sortir un nouvel album\nMais, avant, faut qu'on revoit les bases\nJ'vais faire une vidéo simple où j'vais dire des trucs simples\nParce que vous êtes trop cons\nSimple, basique, okay\n\nLes gens les plus intelligents sont pas toujours ceux qui parlent le mieux (simple)\nLes hommes politiques doivent mentir sinon tu voterais pas pour eux (basique)\nSi tu dis souvent qu't'as pas d'problème avec l'alcool, c'est qu't'en as un (simple)\nFaut pas faire un enfant avec les personnes que tu connais pas bien (basique)\nLes mecs du FN ont la même tête que les méchants dans les films (simple)\nEntre avoir des principes et être un sale con, la ligne est très fine (basique)\nHugo Boss habillait les nazis, le style a son importance (simple)\nLes dauphins sont des violeurs, ouais, méfie-toi des apparences (basique)\n\nBasique, simple, simple, basique\nBasique, simple, simple, basique\nVous n'avez pas les bases, vous n'avez pas les bases\nVous n'avez pas les bases, vous n'avez pas les bases\n\nSi c'est marqué sur internet, c'est p't-être faux mais c'est p't-être vrai (simple)\nIlluminatis ou pas, qu'est-ce que ça change ? Tu t'fais baiser (basique)\nÀ l'étranger, t'es un étranger, ça sert à rien d'être raciste (simple)\nLes mecs les plus fous sont souvent les mecs les plus tristes (basique)\nCent personnes possèdent la moitié des richesses du globe (simple)\nTu s'ras toujours à un ou deux numéros d'avoir le quinté dans l'ordre (basique)\nSi t'es souvent seul avec tes problèmes, c'est parce que souvent l'problème c'est toi (simple)\nToutes les générations disent que celle d'après fait n'importe quoi (cliché)\n\nBasique, simple, simple, basique\nBasique, simple, simple, basique\nBasique, simple, simple, basique\nBasique, simple, simple, basique\nVous n'avez pas les bases\nVous n'avez pas les bases\nVous n'avez pas les bases\nVous n'avez pas les bases\nBasique, simple, vous n'avez pas les bases\nBasique, simple, vous n'avez pas les bases\nBasique, simple, vous n'avez pas les bases\nBasique, simple, vous n'avez pas les bases\nBasique, simple, simple, basique\nBasique, simple, simple, basique\nBasique, simple, simple, basique\nBasique, simple, simple, vous n'avez pas les bases",
-    "page": 1,
-    "voices_path": [
-      "assets/orelsan1.mp3",
-      "assets/orelsan2.mp3"
-    ]
+      "title": "Saurais t'il pardoner",
+      "page": "1",
+      "parole": "S'aurait-il pardonner tout le mal que j'ai commis,\ns'aurait-il effacer par sa grâce tous mes péchés,\n s'aurait-il oublier tous les mots de ma vie ? \nS'aurait-il emporté auprès de lui ce cœur dégoûtant ? \n\nRef 1 : je te dis qu'il est le Dieu de la grâce et l'amour \n\nRef 2 : je te dis qu'il peut porter tous les fardeaux de ta vie \n\nRef 3 : je te dis que Jésus est venu pour te sauver  \n\n 4 : Je te dis qu'il est déjà près de toi près de ton cœur.    \n\nSolo : alors, il peut pardonner tout le mal que j'ai commis, il peut effacer par sa grâce tous mes péchés il peut oublier tous les mots de ma vie, il peut emporter près de lui, ce cœur dégoûtant. \n\nRef : il a pardonné tout le mal que j'ai commis, il a effacé par sa grâce tous mes péchés, il a oublié tous les mots de ma vie. Il a emporté près de lui ce cœur dégoûtant.",
+  
+  "voices_path": [
+      "assets/Alto_saurait'il.mp3",
+      "assets/Sopra_s'aurait'il.mp3",
+      "assets/Tenor_saurait'il.mp3"
+  ]
   },
+  
   {
-    "title": "Ils sont cools",
-    "page": 2,
-    "parole": "ils cont cools blblblblblblblbaaaaaaaaaaaaablalbalablabalbalbalablabalbalbalbalbalablabalbalabalbalba",
-    "voices_path": [
-      "assets/audio/orelsan3.mp3"
-    ]
-  }
-]
+      "title": "Lumiere des hommes",
+      "page": "2",
+      "parole": "Ref : Lumière des hommesNous marchons vers toiFils de DieuTu nous sauveràs \n\nSolo 1 : Ceux qui te cherchentSeigneur,Tu les conduis vers lalumière,Toi la route des égars. \n\nSolo 2 : Ceux qui te trouventSeigneur,Tu leur promets vie éternelle,Toi la pâque des baptisés. \n\nSolo 3 : Ceux qui te suiventSeigneur,Tu les nourris de ta parole,Toi le pain de tes invités.",
+  
+  "voices_path": [
+      "assets/Alto_lumiere.mp3",
+      "assets/Sopra_lumiere.mp3",
+      "assets/Tenor_lumiere.mp3"
+      
+  ]
+  
+  },
+  
+  {
+     "title": "famfe",
+     "page": "2",
+    "parole": "Refrain : (bis) Fem fe po yoye Yen yanga yen Tchebo si kiek kak tchum yo Gue be wa yiem megié dorior Tem jeune dorior  \n\nSolo : Soprano + Alto  Africa po yoye Si tchomtso moepé Europa a poungPone gante si.",
+  
+  "voices_path": [
+       "assets/Sopra_femfe.mp3",
+       "assets/Alto_femfe.mp3",
+       "assets/Tenor_femfe.mp3"
+  
+  
+  ]
+  
+  },
+
+  {
+    "title": "parcequ'il vie",
+    "page": "42",
+   "parole": "Refrain Parce qu'il vit, je n'ai rien à craindre Mon lendemain, est assuré Entre ses mains, il tient ma vie Pour ce temps et l'éternité je sais qu'il vit \n\nSolo 1 : Quand ce jour viendra, où je le verrai, la guerre finale, de la douleur l'âme cèdera, à la misère, je le verrai face à face : Jésus mon sauveur \n\nSolo 2 : Dans mes problèmes, dans mes soucis, dans ma détresse, Jésus est là,il me conduit,il me soutient et ne me laisse jamais seule;jesus mon soveur.",
+
+ "voices_path": [
+      "assets/Sopra_parcequilvie.mp3",
+      "assets/Alto_parcequilvie.mp3",
+      ""
+ 
+ 
+ ]
+ 
+ },
+
+ {
+    "title": "trouver dans ma vie ta presence",
+    "page": "42",
+   "parole": " 1-Croiser ton regard dans le doute Brûler à l'écho de ta voix Rester pour le pain de la routenSa voix reconnaître ton pas \n\n Réf : Trouver dans ma vie ta présence Tenir une lampe allumée Choisir avec toi ta confiance Aimer et se savoir aimer. \n\n 2- Brûler quand le feu devient cendre",
+ "voices_path": [
+      "",
+      "",
+      ""
+ 
+ 
+ ]
+ 
+ }
+  
+  
+  ]

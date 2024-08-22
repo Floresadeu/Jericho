@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
       ),
       home: const HomePage(
-        paroles: "Test de chant",
+        paroles: "Test de chant", title: null,
       ),
     );
   }

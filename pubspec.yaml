@@ -42,16 +42,50 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_svg: ^2.0.10+1
-
   flutter_lints: ^3.0.0
+
+  flutter_launcher_icons: ^0.13.1
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.png"
+
+
 
 
 flutter:
 
   uses-material-design: true
   assets:
-    - assets/images/
-    - assets/audio/
+    - assets/Sopra_parcequilvie.mp3
+    - assets/Alto_parcequilvie.mp3
+
+
+    -  assets/Alto_saurait'il.mp3
+    - assets/Sopra_s'aurait'il.mp3
+    -  assets/Tenor_saurait'il.mp3
+
+    - assets/Alto_lumiere.mp3
+    - assets/Sopra_lumiere.mp3
+    - assets/Tenor_lumiere.mp3
+
+    - assets/Alto_femfe.mp3
+    - assets/Sopra_femfe.mp3
+    - assets/Tenor_femfe.mp3
+      
+    - assets/Sopra_onesbienalamaison.mp3
+
+    - assets/Sopra_n'ayerpaspeur.mp3
+
+    - assets/Sopra_l'amourdedieu.mp3
+
+    - assets/Alto_lamourafaire.mp3 
+    - assets/Sopra_lamourafaire.mp3
+
+    - assets/Sopra_aimercestoutdon.opus
+
+
     - assets/
 
   # To add assets to your application, add an assets section, like this:

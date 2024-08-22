@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:jericho_plays/page/recherche.dart';
+import 'package:jericho_plays/page/search_page.dart';
 
 import 'favoris.dart';
 import 'numero_Page.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({super.key, required paroles});
+  const HomePage({super.key, required paroles, required title});
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -16,7 +16,7 @@ class _HomePageState extends State<HomePage> {
   Color bgColor = const Color(0xFF299417);
   int _selectedIndex = 0;
   final page = [
-    const NumberSelectionPage(),
+    const NumberSelectionPage(paroles: null, title: null, page: null,),
     FavoritesPage(),
   ];
 
